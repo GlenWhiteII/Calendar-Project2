@@ -1,0 +1,20 @@
+
+## Checklist of Objectives
+
+* Create the Listener page where it shows the Artist's setlist and vote buttons for each
+* Give the Listener a limited number of votes 
+* Link the Accounts of the Listeners to a MongoDB 
+* Create a Sign Up page for Listeners that stores their email, username, first name, last name, password and verified password
+* Create a Log in page for all Users that accesses data from the database that allows users to log in and find their information
+* Create a page that shows the Artist their top 5 voted songs that the Listeners have requested and also display the amount of votes on those songs
+* Create the hashing for passwords
+* Research the Spotify API and see if it isn't a complete pain to just pull data on music titles, artists, artwork, and album titles
+* Deploy the app using Heroku (Pay for it, probably. Most likely going to be worth it)
+* Style the app. (Let's try using Bootstrapper and save more time for features on the app rather than spending all of our time making it pretty)
+
+// ADDITIONAL FEATURES THAT I REALLY WANT TO ADD IN THE FUTURE, EVEN IF IT DOESN'T FIT IN THE DEADLINE 
+* Create a promotional tab on the Listener side that lists Artists that want the exposure
+* Create a form that allows the artists to update their information with a bio, profile picture, cover photo, and potentially more promotional space like upcoming shows, sets, etc. 
+* Make a search bar that allows listeners to search up artists that they want to hear in the future. (Let's make a community)
+* Somehow... pay wall that allows premium access to the application where Listeners can have more votes casted
+* Throw in some clever sayings that promotes Listeners to collaborate with other Listeners that spreads the word of the app and also rewards them for including other people so they can agree on a song they want to listen to. 
