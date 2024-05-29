@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -12,37 +16,44 @@
       <h2>Sign Up</h2>
       <form action="/signup" method="post">
         <div class="form-group">
-          <label for="first-name">First Name:</label>
+          <label for="first-name">Full Name:</label>
           <div class="input-icon">
             <i class="bx bx-user bx-flip-horizontal"></i>
             <input type="text" id="first-name" name="first_name" required />
           </div>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="last-name">Last Name:</label>
           <div class="input-icon">
-            <i class="icon">L</i>
+            <i class="bx bx-user bx-flip-horizontal"></i>
             <input type="text" id="last-name" name="last_name" required />
           </div>
-        </div>
+        </div> -->
         <div class="form-group">
           <label for="username">Username:</label>
           <div class="input-icon">
-            <i class="icon">U</i>
+            <i class="bx bx-user bx-flip-horizontal"></i>
             <input type="text" id="username" name="username" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <div class="input-icon">
+            <i class="bx bx-envelope bx-flip-horizontal"></i>
+            <input type="text" id="last-name" name="last_name" required />
           </div>
         </div>
         <div class="form-group">
           <label for="password">Password:</label>
           <div class="input-icon">
-            <i class="icon">P</i>
+            <i class="bx bx-lock-alt bx-flip-horizontal"></i>
             <input type="password" id="password" name="password" required />
           </div>
         </div>
         <div class="form-group">
           <label for="confirm-password">Verify Password:</label>
           <div class="input-icon">
-            <i class="icon">V</i>
+            <i class="bx bx-lock-alt bx-flip-horizontal"></i>
             <input
               type="password"
               id="confirm-password"
@@ -55,6 +66,10 @@
           <input type="submit" value="Sign Up" />
         </div>
       </form>
+      <p class="login-link">
+        Already have an account? <a href="/login" id="login">Log in</a>
+      </p>
     </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>

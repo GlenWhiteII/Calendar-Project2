@@ -58,3 +58,6 @@ body {
 .container #claim {
   color: var(--other-color);
 }
+.container #login {
+  color: var(--text-color);
+}
