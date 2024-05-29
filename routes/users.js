@@ -7,5 +7,10 @@ router.get("/login", (req, res) => {
 router.get("/", (req, res) => {
   res.render("signup");
 });
-
+router.get("/listener", (req, res) => {
+  res.render("listener");
+});
+router.get("/artist", (req, res) => {
+  res.render("artist");
+});
 module.exports = router;
