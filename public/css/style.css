@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --main-color: #351db1;
   --secondary-color: #7752fe;
@@ -7,7 +8,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-color: var(--main-color);
 }
 .container {
@@ -16,6 +19,7 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  color: var(--tertiary-color);
 }
 .form-group {
   margin-bottom: 15px;
@@ -30,11 +34,11 @@ body {
   box-sizing: border-box;
 }
 .form-group input[type="submit"] {
-  background-color: #4caf50;
+  background-color: var(--secondary-color);
   color: white;
   border: none;
   cursor: pointer;
 }
 .form-group input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: var(--tertiary-color);
 }
