@@ -18,3 +18,9 @@
 * Make a search bar that allows listeners to search up artists that they want to hear in the future. (Let's make a community)
 * Somehow... pay wall that allows premium access to the application where Listeners can have more votes casted
 * Throw in some clever sayings that promotes Listeners to collaborate with other Listeners that spreads the word of the app and also rewards them for including other people so they can agree on a song they want to listen to. 
+
+Tuesday, May 28 
+======================
+
+* Create the server and link the data information with MongoDB
+* 
