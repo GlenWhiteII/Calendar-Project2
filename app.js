@@ -13,12 +13,17 @@ app.set("view engine", "ejs");
 app.use("/", express.static("public"));
 
 // Config
-const mongoURI = "mongodb://localhost:27017/Entendre";
 
 // Routes
 const routes = require("./routes/users");
 app.use("/", routes);
 // Models
+
+// MongoDB
+mongoose
+  .connect("mongodb://localhost:27017/Entendre")
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.log(err));
 
 // App Listen
 app.listen(port);
