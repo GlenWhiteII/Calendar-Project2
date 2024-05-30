@@ -94,3 +94,24 @@ body {
   border: 1px solid #ccc;
   margin-left: 10px;
 }
+.table {
+  width: 100%;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#table-item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#table-item2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#table-item3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
