@@ -4,18 +4,19 @@ const app = express();
 const mongoose = require("mongoose");
 const mongoDB = require("mongodb");
 require("dotenv").config();
+app.use(express.json());
 
 // Port
 const port = process.env.PORT || 3034;
 
 // Middleware
 app.set("view engine", "ejs");
-app.use("/", express.static("public"));
+app.use("/", express.static("./src/public"));
 
 // Config
 
 // Routes
-const routes = require("./routes/users");
+const routes = require("./src/seed/users");
 app.use("/", routes);
 // Models
 
