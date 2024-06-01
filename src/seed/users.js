@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
-const { createUser } = require("../controllers");
+const { createUser } = require("../controllers/auth");
 // Import the Model
 const User = require("../models/artists");
 
@@ -18,10 +18,7 @@ router.get("/artist", (req, res) => {
   res.render("artist");
 });
 router.post("/signup", async (req, res) => {
-  const { email, name, username, password } = req.body;
-  console.log(req.body);
-  console.log(email);
-  await createUser(email, name, username, password);
+  await createUser(req, res);
 });
 module.exports = router;
 
