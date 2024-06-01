@@ -12,6 +12,7 @@ const port = process.env.PORT || 3034;
 // Middleware
 app.set("view engine", "ejs");
 app.use("/", express.static("./src/public"));
+app.use(express.urlencoded({ extended: true }));
 
 // Config
 

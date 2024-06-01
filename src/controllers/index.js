@@ -11,13 +11,13 @@ const createUser = async (email, name, username, password) => {
     const findUser = await User.findOne({ email: email });
 
     if (!findUser) {
-      // const newUser = await User.create({
-      //   name: name,
-      //   username: username,
-      //   email: email,
-      //   password: password,
-      // });
-      // console.log("---- New User! ----", newUser);
+      const newUser = await User.create({
+        name: name,
+        username: username,
+        email: email,
+        password: password,
+      });
+      console.log("---- New User! ----", newUser);
     } else {
       req.flash("error", "Email already exists. Try another email");
       res.redirect("/auth/signup");

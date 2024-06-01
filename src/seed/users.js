@@ -18,10 +18,10 @@ router.get("/artist", (req, res) => {
   res.render("artist");
 });
 router.post("/signup", async (req, res) => {
-  console.log(req);
   const { email, name, username, password } = req.body;
+  console.log(req.body);
+  console.log(email);
   await createUser(email, name, username, password);
-  res.send("Success");
 });
 module.exports = router;
 
