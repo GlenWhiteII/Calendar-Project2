@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 // Config
 
 // Routes
-const routes = require("./src/routes/users");
+const routes = require("./src/routes");
 app.use("/", routes);
 // Models
 

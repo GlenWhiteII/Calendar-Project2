@@ -21,5 +21,18 @@ const getUser = async (email) => {
   return findUser;
 };
 
+const verifyUser = async (email, password) => {
+  const findUser = await User.findOne({ email: email });
+  const findPass = await User.findOne({ password: password });
+
+  if (findUser && findPass) {
+    console.log(findUser);
+    console.log(findPass);
+  } else {
+    console.log("no");
+  }
+};
+
 module.exports.addUser = addUser;
 module.exports.getUser = getUser;
+module.exports.verifyUser = verifyUser;

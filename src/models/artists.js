@@ -12,9 +12,9 @@ const userSchema = new mongoose.Schema(
 );
 
 userSchema.pre("save", function (next) {
-  console.log("------- PASSWORD -------", this.password); // might delete later...
+  console.log("------- PASSWORD -------", this.password);
   let hash = bcrypt.hashSync(this.password, 12);
-  console.log("------- HASH -------", hash); // might delete later...
+  console.log("------- HASH -------", hash);
   this.password = hash;
   next();
 });

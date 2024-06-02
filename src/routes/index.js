@@ -2,23 +2,32 @@ const express = require("express");
 const router = express.Router();
 const { createUser } = require("../controllers/auth");
 
-router.get("/login", (req, res) => {
+// UI ROUTES
+router.get("/ui/login", (req, res) => {
   res.render("auth/login");
 });
-router.get("/signup", (req, res) => {
+router.get("/ui/signup", (req, res) => {
   res.render("auth/signup");
 });
-router.get("/listener", (req, res) => {
+router.get("/ui/listener", (req, res) => {
   res.render("listener");
 });
-router.get("/artist", (req, res) => {
+router.get("/ui/artist", (req, res) => {
   res.render("artist");
 });
+
+// POST ROUTES
 router.post("/signup", async (req, res) => {
   await createUser(req, res);
 });
 router.post("/login", async (req, res) => {
-  // await createUser(req, res);
+  console.log(req.body);
 });
+
+// GET ROUTES
+
+// PUT ROUTES
+
+// DELETE ROUTES
 
 module.exports = router;
