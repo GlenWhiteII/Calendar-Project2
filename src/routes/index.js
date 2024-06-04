@@ -15,7 +15,9 @@ router.get("/ui/listener", (req, res) => {
 router.get("/ui/artist", (req, res) => {
   res.render("artist");
 });
-
+router.get("/", (req, res) => {
+  res.render("home");
+});
 // POST ROUTES
 router.post("/signup", async (req, res) => {
   await createUser(req, res);
